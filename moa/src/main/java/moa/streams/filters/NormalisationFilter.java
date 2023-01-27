@@ -19,7 +19,6 @@ import com.github.javacliparser.FileOption;
 import com.github.javacliparser.FlagOption;
 import com.yahoo.labs.samoa.instances.Instance;
 import com.yahoo.labs.samoa.instances.InstancesHeader;
-import meka.core.F;
 import moa.capabilities.CapabilitiesHandler;
 import moa.capabilities.Capability;
 import moa.capabilities.ImmutableCapabilities;
