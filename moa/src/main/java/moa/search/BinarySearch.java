@@ -1,10 +1,12 @@
 package moa.search;
 
+import weka.core.pmml.jaxbbindings.False;
+
 import java.util.Arrays;
 
 public class BinarySearch {
-    public int Search(int[] array, int target) {
-        if (array.length == 0) return -1;
+    public boolean Search(int[] array, int target) {
+        if (array.length == 0) return false;
 
         int[] sortedArray = array.clone();
         Arrays.sort(sortedArray);
@@ -14,7 +16,7 @@ public class BinarySearch {
         while (max > min) {
             int mid = (max + min) / 2;
             if (sortedArray[mid] == target) {
-                return mid;
+                return true;
             }
             if (sortedArray[mid] < target) {
                 min = mid + 1;
@@ -22,7 +24,7 @@ public class BinarySearch {
                 max = mid;
             }
         }
-        return -1;
+        return false;
     }
 
 }

@@ -16,16 +16,16 @@ public class BinarySearchTest  extends TestCase {
     }
 
     public void testEmptyArray(){
-        int result = new BinarySearch().Search(array2,8);
-        assertEquals(result, -1);
+        boolean result = new BinarySearch().Search(array2,4);
+        assertEquals(result, false);
     }
 
     public void testOrderedArray(){
-        int result = new BinarySearch().Search(array1,3);
-        assertEquals(result, 2);
+        boolean result = new BinarySearch().Search(array1,3);
+        assertEquals(result, true);
     }
     public void testInversedArray(){
-        int result = new BinarySearch().Search(array3,5);
-        assertEquals(result, 4);
+        boolean result = new BinarySearch().Search(array3,5);
+        assertEquals(result, true);
     }
 }
