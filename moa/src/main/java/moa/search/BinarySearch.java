@@ -1,7 +1,5 @@
 package moa.search;
 
-import weka.core.pmml.jaxbbindings.False;
-
 import java.util.Arrays;
 
 public class BinarySearch {
@@ -26,6 +24,5 @@ public class BinarySearch {
         }
         return false;
     }
-
 }
 
